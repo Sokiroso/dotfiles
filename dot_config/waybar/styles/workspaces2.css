@@ -1,0 +1,46 @@
+#workspaces {
+    background: transparent;
+    /* margin: 5px 5px 5px 5px ; */
+    padding: 4px 1px;
+    border-radius: 12px;
+    /* font-weight: normal;
+    font-style: normal; */
+    /* opacity: 0.8; */
+    color: #ffffff;
+    /* color: #000000; */
+    font-size: 100px;
+}
+
+#workspaces button {
+    color: #E0E0DE;
+    padding: 0px 5px;
+    margin: 0px 2px;
+    /* border-radius: 100px; */
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #252E26 50%, #607864 50%);
+    /* background: linear-gradient(to bottom, #252E26 50%, #607864 50%); */
+    transition: background-position 0.5s ease; /* Плавное изменение положения границы */
+    background-size: 100% 200%; /* Увеличиваем область градиента для анимации */
+    background-position: 0 20%; /* Начальная позиция градиента */
+    /* background-color: #84745B; */
+    /* transition: all 0.3s ease-in-out; */
+    /* opacity: 0.4; */
+    font-size: 100px;
+    min-height: 20px;
+}
+
+#workspaces button.active {
+    background-position: 0 100%;
+    /* background: linear-gradient(to bottom, #ff0000 30%, #0000ff 30%); */
+    /* background-color: #84745B; */
+    /* border-radius: 10px; */
+    /* background-size: 400% 400%; */
+    /* transition: all 0.3s ease-in-out; */
+    /* opacity: 1.0; */
+}
+
+#workspaces button.hover {
+    /* background-color: #84745B;
+    border-radius: 10px;
+    background-size: 400% 400%; */
+}
