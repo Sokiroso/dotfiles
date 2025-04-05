@@ -1,0 +1,11 @@
+#tabs-tabbar-container {
+    background-color: var(--colorBg) !important;
+}
+
+.tabs-left .button-toolbar.workspace-popup.tabbar-workspace-button, .tabs-right .button-toolbar.workspace-popup.tabbar-workspace-button {
+    background-color: var(--colorBg);
+}
+
+#browser.color-behind-tabs-on .tab.active.active {
+    background-color: var(--colorAccentBgAlphaHeavy) !important;
+}

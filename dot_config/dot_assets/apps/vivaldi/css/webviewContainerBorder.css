@@ -1,0 +1,52 @@
+/*main*/
+
+body:not(:has(#browser.fullscreen)) #webview-container {
+    padding: 6px;
+    box-shadow: inset 0 0 0 6px var(--colorBg);    
+}
+
+body:not(:has(#browser.fullscreen)) #webpage-stack {
+    border-radius: 7px;
+    box-shadow: 0 0 0 6px var(--colorBg);
+}
+
+body:not(:has(#browser.fullscreen)):has(#browser.tabs-left) #webview-container {
+    padding: 6px;
+    padding-left: 2px;
+    box-shadow: inset 2px 0px var(--colorBg),
+                inset 0px 6px var(--colorBg),
+                inset -6px 0px var(--colorBg),
+                inset 0px -6px var(--colorBg);
+}
+
+body:not(:has(#browser.fullscreen)):has(#browser.tabs-right) #webview-container {
+    padding: 6px;
+    padding-right: 2px;
+    box-shadow: inset 6px 0px var(--colorBg),
+                inset 0px 6px var(--colorBg),
+                inset -2px 0px var(--colorBg),
+                inset 0px -6px var(--colorBg);
+}
+
+/*tiling*/
+
+#browser:not(.inner, .narrow-tiling) #webpage-stack > .tiled.visible {
+    padding: var(--n2);
+    box-shadow: inset 0 0 0 var(--n6) var(--colorBg);
+}
+
+#browser .tile:has(> .tiled.webpageview) {
+    border: var(--mosaicPadding) solid var(--colorBg);
+}
+
+.webpageview.tiled:not(.active) {
+    box-shadow: 0 0 0 6px var(--colorBg), var(--bgCoverShadow);
+}
+
+.isblurred .webpageview.tiled.active {
+    box-shadow: 0 0 0 2px var(--colorBg), var(--bgCoverShadow);
+}
+
+#webview-container {
+    --bgCoverShadow: 0 0 0 var(--mosaicPadding) var(--colorBg);
+}
